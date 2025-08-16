@@ -1,0 +1,12 @@
+services:
+  fastapi-starter:
+    container_name: fastapi-starter-dev
+    image: ar010731/fastapi-starter:v1.2.0
+    ports:
+      - "8001:80"
+    environment:
+      UVICORN_HOST: "0.0.0.0"
+      UVICORN_PORT: "80"
+    command:
+      - /app/.venv/bin/uvicorn
+      - app.main:app
