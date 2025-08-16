@@ -1,7 +1,7 @@
 services:
   fastapi-starter:
     container_name: fastapi-starter-dev
-    image: ar010731/fastapi-starter:v1.2.0
+    image: ar010731/fastapi-starter:v1.3.0
     ports:
       - "8001:80"
     environment:
