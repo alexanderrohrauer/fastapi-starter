@@ -11,4 +11,4 @@ WORKDIR /app
 RUN uv sync --frozen --no-cache
 
 # Run the application.
-CMD ["/app/.venv/bin/fastapi", "run", "app/main.py"]
+CMD ["/app/.venv/bin/uvicorn", "app.main.app"]
